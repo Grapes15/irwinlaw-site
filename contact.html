@@ -55,10 +55,10 @@
     </div>
     <div>
       <h2>Send a message</h2>
-      <!-- FormSubmit endpoint. After first live submission + activation, swap the email for the
-           FormSubmit random alias so no address appears in markup. Delivers to irwin@ with cc loralee@. -->
-      <form action="https://formsubmit.co/irwin@irwinlawmn.com" method="POST">
-        <input type="hidden" name="_cc" value="loralee@irwinlawmn.com">
+      <!-- FormSubmit endpoint (activated 2026-07-24). Action + cc are assembled at submit time so no
+           address appears in static markup for scrapers. Delivers to irwin@ with cc loralee@. -->
+      <form id="contact-form" action="#" method="POST">
+        <input type="hidden" name="_cc" value="">
         <input type="hidden" name="_subject" value="New inquiry — irwinlawmn.com">
         <input type="hidden" name="_template" value="table">
         <label for="name">Your name</label>
@@ -77,6 +77,14 @@
         <textarea id="message" name="message" rows="6" required></textarea>
         <button class="btn" type="submit">Send</button>
       </form>
+      <script>
+      (function(){
+        var f=document.getElementById("contact-form");
+        var d=atob("aXJ3aW5sYXdtbi5jb20=");
+        f.action="https://formsubmit.co/"+atob("aXJ3aW4=")+"@"+d;
+        f.querySelector("input[name=_cc]").value=atob("bG9yYWxlZQ==")+"@"+d;
+      })();
+      </script>
     </div>
   </div>
 </section>
