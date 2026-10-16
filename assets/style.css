@@ -221,3 +221,41 @@ footer a:hover { color: var(--red); }
   padding-top: 0;
 }
 .hero-inner.hero-sign .lede { max-width: 44rem; margin-bottom: 1.25rem; text-shadow: 0 2px 8px rgba(0,0,0,0.9); }
+
+/* ---------- Rules pages (rules.html, rules-operating-file.html) ---------- */
+.kicker a { color: var(--red); text-decoration: underline; }
+.page-hero h1.long { font-size: clamp(2rem, 4.6vw, 3.4rem); max-width: 56rem; }
+.page-hero .hero-inner h1 { margin-bottom: 1.25rem; }
+
+.fingerprint { max-width: 46rem; border-left: 3px solid var(--red); padding-left: 1rem; }
+.fingerprint p { margin-bottom: 0.5rem; color: #d9d8de; }
+.fingerprint .fp-label { font-family: "Oswald", sans-serif; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.85rem; color: var(--gray); margin-bottom: 0.25rem; }
+.fingerprint .fp-note { font-size: 0.95rem; }
+.fingerprint .fp-plain { margin: 0.75rem 0 0; font-family: "Oswald", sans-serif; text-transform: uppercase; letter-spacing: 0.06em; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.88em; background: var(--panel-2); border: 1px solid var(--line); padding: 0.1em 0.35em; word-break: break-all; }
+
+.doc > p, .doc > ul, .doc > ol, .doc > blockquote { max-width: 46rem; }
+.doc h2 { scroll-margin-top: 5rem; }
+.doc h3 { margin-top: 1.75rem; }
+.doc ol { margin-left: 1.5rem; }
+.doc p.rule { border-left: 3px solid var(--red); padding-left: 1rem; }
+.doc blockquote { border-left: 3px solid var(--red); background: var(--panel-2); padding: 1rem 1.25rem; margin: 0 0 1rem; }
+.doc blockquote p { margin: 0; }
+.doc .coa p { margin-bottom: 1rem; }
+.doc-table { overflow-x: auto; margin: 0 0 1.25rem; -webkit-overflow-scrolling: touch; }
+.doc-table table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: 0.92rem; line-height: 1.5; }
+.doc-table th, .doc-table td { border: 1px solid var(--line); padding: 0.6rem 0.75rem; text-align: left; vertical-align: top; }
+.doc-table th { font-family: "Oswald", sans-serif; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; background: var(--panel-2); color: var(--white); }
+.doc-table td:first-child { white-space: nowrap; }
+.doc-table td:first-child { font-weight: 600; }
+.foot-rules { color: var(--white); }
+@media (max-width: 720px) {
+  .doc-table { overflow: visible; }
+  .doc-table table, .doc-table tbody, .doc-table tr, .doc-table td { display: block; width: 100%; min-width: 0; }
+  .doc-table thead { display: none; }
+  .doc-table tr { border: 1px solid var(--line); margin-bottom: 1rem; background: var(--panel-2); }
+  .doc-table td { border: 0; border-bottom: 1px solid var(--line); }
+  .doc-table td:last-child { border-bottom: 0; }
+  .doc-table td:first-child { white-space: normal; font-size: 1rem; }
+  .doc-table td:not(:first-child)::before { content: attr(data-label); display: block; font-family: "Oswald", sans-serif; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.75rem; color: var(--gray); margin-bottom: 0.15rem; }
+}
