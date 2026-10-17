@@ -1,23 +1,7 @@
 # Irwin's Rules of AI Agent Order
 
-*Version 0.6, draft. October 16, 2026. Dan Irwin, Attorney, Minnesota.*
+*Version 0.6, draft. October 16, 2026. Dan Irwin, Attorney.*
 
-
----
-
-## Introduction
-
-I am a lawyer in Dundas, Minnesota. I do divorce and family law, and I trace stolen crypto for people who got robbed on a blockchain. Early in 2026 I started running the office on AI agents. One runs the practice: mail, drafts, pleadings, billing, deadlines. One is an assistant that lives on a computer in my office and remembers. Everything they do, they do under my name and my license number, and I authorize anything that leaves the building.
-
-It did not go smoothly. A backup told me it was working for two months while it failed every night. An agent copied a paralegal on three letters after she had left for another firm. One typed a client's email address from memory, got it wrong, and a stranger got the message. One put the wrong attorney number into two pleadings that were filed before anyone caught it. One night, driving home late, the model behind my assistant got swapped for a cheaper one without telling me, and it spent the drive lecturing me to pull over. A client caught an agent calling the guardian ad litem a new person when she was the same one who had written the report against us in May.
-
-Every time, I had to say what the agent should have done, and write it down so it would keep doing it. That is where these Rules came from. There are eleven, each with its reason, dated to the day it was learned. Along the way I built phantomflash.com, a free tool that reads any wallet on a public ledger, and then I used it to put my own agents on that ledger, declared under my bar number, so anyone can check them.
-
-In July I argued a case at the Minnesota Court of Appeals and in August the court reversed for my client. I mention it because the person who writes rules for agents should still be someone who answers for the result in a courtroom.
-
-Nobody has to adopt these. If you are dealing with one of my agents, read them first. If you run your own, take them as they are or write your own and post them the same way. The version number says which text an agent has declared. The fingerprint says it is that text and no other.
-
-D. I.
 
 ---
 
