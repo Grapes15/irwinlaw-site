@@ -1,0 +1,38 @@
+/* Rules pages: archival palette. Off-white paper, slate ink, light blue accent.
+   Loaded after style.css on rules.html and rules-operating-file.html only. */
+:root {
+  --black: #f6f3ec;     /* page: off-white paper */
+  --panel: #edf2f7;     /* alternate bands: pale blue */
+  --panel-2: #e4ecf3;   /* quotes, code, table heads */
+  --red: #4f84b4;       /* accent: light blue, readable on paper */
+  --red-dark: #3a6a96;
+  --white: #1c2733;     /* ink: slate */
+  --gray: #5e6b78;
+  --line: #d3dde6;
+}
+body { background: var(--black); color: var(--white); }
+header { background: rgba(246,243,236,0.94); border-bottom: 2px solid var(--red); }
+.wordmark, .wordmark span { text-shadow: none; }
+.wordmark { color: var(--white); }
+.wordmark span { color: var(--red); }
+nav a { color: var(--white); }
+nav a:hover, nav a.active { color: var(--red); }
+.nav-toggle { color: var(--white); }
+@media (max-width: 720px) { nav { background: var(--black); } }
+h3 { color: var(--white); }
+.page-hero { background: var(--panel); border-bottom: 4px solid var(--red); }
+.hero p.lede, .fingerprint p { color: #3b4a5a; }
+.fingerprint .fp-label { color: var(--gray); }
+code { background: #eef3f7; border: 1px solid var(--line); color: var(--white); }
+.doc blockquote { background: var(--panel-2); border-left-color: var(--red); }
+.doc p.rule { border-left-color: var(--red); }
+.coa { background: var(--panel-2); border-color: var(--red); }
+.btn { background: var(--red); color: #ffffff; border-color: var(--red); }
+.btn:hover { background: transparent; color: var(--red); }
+.halftone { opacity: 0.35; }
+footer { color: var(--gray); border-top: 1px solid var(--line); }
+footer a { color: var(--gray); }
+footer a:hover { color: var(--red); }
+.foot-firm, .foot-rules { color: var(--white); }
+.doc-table th { background: var(--panel-2); color: var(--white); }
+@media (max-width: 720px) { .doc-table tr { background: var(--panel-2); } }
