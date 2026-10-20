@@ -36,3 +36,16 @@ footer a:hover { color: var(--red); }
 .foot-firm, .foot-rules { color: var(--white); }
 .doc-table th { background: var(--panel-2); color: var(--white); }
 @media (max-width: 720px) { .doc-table tr { background: var(--panel-2); } }
+
+/* One-page layout (v0.8) */
+.thesis { max-width: 46rem; margin-top: 0.5rem; }
+.thesis p { font-size: 1.3rem; line-height: 1.55; margin: 0 0 0.9rem; color: var(--white); }
+.thesis a { color: var(--red-dark); text-decoration: underline; }
+.thesis .small, .thesis .small a { font-size: 0.9rem; }
+.doc p.sig { text-align: right; font-weight: 600; }
+.doc p.closer { font-weight: 600; font-size: 1.1rem; margin-top: 1.5rem; }
+.doc p.sub { color: var(--gray); font-style: italic; }
+.doc p.run { border-left: 3px solid var(--red); padding-left: 1rem; }
+.doc a { color: var(--red-dark); }
+.fp-hash code { word-break: break-all; overflow-wrap: anywhere; }
+.doc h3 { scroll-margin-top: 5rem; }
