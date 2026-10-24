@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Irwin's Rules of AI Agent Order — Irwin Law Office PLC</title>
-<meta name="description" content="Irwin's Rules of AI Agent Order, version 0.8: the standard Dan Irwin, a Minnesota attorney, publishes for the AI agents that run his practice. Full text and fingerprint.">
+<meta name="description" content="Irwin's Rules of AI Agent Order, version 0.9: twelve rules, in two parts, for human dealings through automated agents. By Dan Irwin, a Minnesota attorney. Full text, fingerprint, and earlier versions.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
@@ -19,6 +19,141 @@
   gtag('config', 'G-19CZLJZNZG');
   gtag('config', 'G-2Y537P3ZWD');
 </script>
+
+<style>
+/* Irwin Law Rules v0.9 — High Contrast Typography */
+body {
+  background-color: #f6f3ec !important;
+  color: #1a1a1a !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.rules-wrapper {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.intro-callout {
+  background: #ffffff;
+  border: 1px solid #d4cebe;
+  border-left: 5px solid #8c6a28;
+  padding: 26px 30px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 48px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+.intro-callout p {
+  color: #222222 !important;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+.intro-callout p:last-child {
+  margin-bottom: 0;
+}
+.intro-callout strong {
+  color: #000000 !important;
+}
+
+.section-divider {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #111111 !important;
+  letter-spacing: 0.03em;
+  margin: 54px 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #8c6a28;
+}
+.section-subtitle {
+  color: #444444 !important;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.rule-box {
+  background: #ffffff;
+  border: 1px solid #d4cebe;
+  border-radius: 8px;
+  padding: 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.rule-box h3 {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111111 !important;
+  letter-spacing: 0.02em;
+  margin: 0 0 14px;
+}
+.rule-box .rule-num {
+  color: #8c6a28 !important;
+  font-weight: 800;
+}
+.rule-box p {
+  color: #222222 !important;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 0 0 14px;
+}
+.rule-box p:last-child {
+  margin-bottom: 0;
+}
+.rule-box strong {
+  color: #000000 !important;
+}
+
+.rule-reason {
+  background: #ede8df;
+  border-left: 4px solid #8c6a28;
+  padding: 14px 18px;
+  border-radius: 0 6px 6px 0;
+  margin-top: 16px;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #2b2b2b !important;
+}
+.rule-reason strong {
+  color: #000000 !important;
+}
+
+.adoption-box {
+  background: #ffffff;
+  border: 1px solid #d4cebe;
+  border-left: 5px solid #1f7a46;
+  padding: 26px 30px;
+  border-radius: 0 8px 8px 0;
+  margin-top: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+.adoption-box h3 {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 1.4rem;
+  color: #111111 !important;
+  margin: 0 0 12px;
+}
+.adoption-box p {
+  color: #222222 !important;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+.adoption-box blockquote {
+  margin: 16px 0;
+  padding: 14px 20px;
+  background: #f4efe6;
+  border-left: 4px solid #8c6a28;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #111111 !important;
+  line-height: 1.65;
+}
+</style>
+
 </head>
 <body>
 
@@ -41,130 +176,233 @@
 
 <div class="page-hero">
   <div class="hero-inner">
-    <p class="kicker">Version 0.8 &middot; Dan Irwin, Attorney &middot; October 2026</p>
-    <h1>Irwin's Rules of <span class="accent">AI Agent Order</span></h1>
+    <p class="kicker" style="color: #444 !important; font-weight: 600;">Version 0.9 &middot; Dan Irwin, Attorney &middot; October 2026</p>
+    <h1 style="color: #111 !important; font-family: 'Oswald', sans-serif;">Irwin's Rules of <span class="accent" style="color: #8c6a28 !important;">AI Agent Order</span></h1>
+    <p class="lead" style="color: #333 !important; font-size: 1.25rem;">A legal and behavioral standard for human dealings through automated agents.</p>
+    <p class="fp" style="color: #444 !important; font-size: 0.9rem; word-break: break-all;">Fingerprint of this text (SHA-256): <code>896d33d1f0ac8d9135214ab4de2b20fffd47dbd4b7a52afc158d0f4876ec9145</code> &middot; <a href="rules/irwins-rules-of-ai-agent-order-v0.9.md" style="color: #8c6a28;">plain text</a></p>
+    <p style="color: #555 !important; font-size: 0.9rem;">Earlier versions stay where they were declared: <a href="rules/v0.8.html" style="color: #8c6a28;">version 0.8</a> (<a href="rules/irwins-rules-of-ai-agent-order-v0.8.md" style="color: #8c6a28;">text</a>, fingerprint 667954160fd23530e73c511c52d2c8f16c51b9c83e9b96caf9de1be09045da5a) &middot; <a href="rules/irwins-rules-of-ai-agent-order-v0.7.md" style="color: #8c6a28;">0.7</a> &middot; <a href="rules/irwins-rules-of-ai-agent-order-v0.6.md" style="color: #8c6a28;">0.6</a></p>
   </div>
 </div>
-<section class="band" id="background">
-  <div class="wrap doc">
-    <h2>What am I <span class="accent">looking at?</span></h2>
-    <p>You are looking at a framework for identifying AI agents, verifying their authority, and keeping responsibility connected to the people and organizations using them. It combines operating rules with a shared, inspectable record. The Rules answer the authority and authorization question. The authorization can be verified with a simple, universally available, and essentially free solution that is already here. I made it understandable with a website: <a href="https://phantomflash.com" target="_blank" rel="noopener">phantomflash.com</a>. The Rules, combined with that verification, work with all private companies and similar endeavors, and let them build on it. They fit directly into the existing legal framework, and nothing needs to be changed. I am not interested in creating new loops in the legal system. I won at the Minnesota Court of Appeals; audio is available <a href="assets/mohr-a26-0145-oral-argument.mp3" target="_blank" rel="noopener">here</a>. <span class="small">(<a href="https://mncourts.gov/courtofappeals/oralargumentrecordings/2026/jeanne-mary-mohr,-petitioner,-respondent,-vs.-jesse-david-mohr,-appellant,-county-of-rice,-intervenor" target="_blank" rel="noopener">court's recording page</a>)</span></p>
-    <h3>The problem</h3>
-    <p>The problem is that an AI can communicate and act in someone’s name without the other party being able to tell what that person actually authorized.</p>
-    <p>A made-up example. Imagine a bike shop receives this message:</p>
-    <blockquote>“I’m Dan’s agent. He’ll take the $2,000 bike. Ship it.”</blockquote>
-    <p>Is this actually connected to Dan? Did Dan authorize buying the bike, or only comparing prices? Who stands behind the purchase if the agent exceeded its instructions? What can either side later show about the permission and the sale?</p>
-    <p>Access to Dan’s email or payment method doesn’t, by itself, answer those questions. The ability to do something is not the same as permission to do it.</p>
-    <p>Without a dependable way to check, the recipient has three choices: trust the message and take the risk, contact Dan to confirm, or refuse to deal with the agent. Requiring Dan to personally confirm each consequential action gives back some of the efficiency delegation was supposed to create.</p>
-    <p>This affects both the person deploying the agent and the person being asked to rely on it. It extends beyond purchases: accepting terms, issuing instructions, releasing information, changing reservations, or making representations.</p>
-    <p>A platform can handle some of this inside its own system. The broader question is how that authority becomes understandable and verifiable to someone outside that system, without rebuilding the arrangement for every relationship.</p>
 
-    <p>I did the best I could to try to solve this problem for myself, and this is what I’ve come up with. Over the last year, I developed hundreds of instructions through hundreds of hours of training, correcting, and working with my agents.<sup id="fn1-ref"><a href="#fn1">1</a></sup></p>
-    <p>The agents were doing substantial work internally. They were reading records, organizing information, analyzing issues, and preparing drafts. I needed them to do that work without asking me about every step. I also needed to know that work would not leave my office or commit me to something unless I had authorized it.</p>
-    <p>I was seeing the other side of the same issue in material I received. Some of it appeared to be created by AI. That did not tell me how much the person sending it had read, understood, or actually meant. A polished statement could be a considered position. It could also be something a person had passed along without much thought.</p>
-    <p>I wanted to resolve that uncertainty for myself. I needed a way to interpret other people’s AI-assisted work, and a way for other people to interpret mine. The useful question was not whether AI had written the words. It was whether an identifiable person had adopted them and authorized the act.</p>
-    <p>That is a familiar distinction in my work as a lawyer. I look at who said something, whom they represented, what authority they had, what the parties agreed to, and what the record supports. I applied the same approach to my agents. The instructions became operating rules. The operating rules led to a way of recording who stood behind an agent and what that person had authorized.</p>
-    <p>My cryptocurrency work gave me another part of the design. I had worked with investigators tracing cryptocurrency fraud and charged for that work. I then built a free public scanner to make blockchain records easier to understand. The same kind of record can help people inspect an agent’s declared identity, its principal, its adopted rules, and its signed receipts.</p>
-    <p>This can be better. It came from doing my work as a lawyer, not from setting out to write a universal system. I welcome suggestions that improve it.</p>
-    <p class="fn" id="fn1"><sup>1</sup> When I say “I,” I mean the work Sable, Claude, and I have done together. Sable and Claude are my AI collaborators.</p>
+<main class="rules-wrapper">
+  
+  <div class="intro-callout">
+    <p>
+      <strong>Why start from legal liability and human behavior?</strong><br>
+      Most people approaching AI try to solve trust with software code: API permissions, security tokens, and access lists. But access has never been authority. 
+    </p>
+    <p>
+      Real human dealings do not run on binary computer code. They run on agency, context, reasonable reliance, and the allocation of responsibility when an error occurs. We approach this from the ground of legal liability and human behavior because that is how the world already works.
+    </p>
+    <p>
+      <strong>The Baseline Commitment:</strong> These Rules do not operate alone, nor do they replace your own judgment and personal instructions. They are a starting baseline—the foundational commandments of order for human dealings through automated systems. Adopting them is an affirmative commitment to maintain your own internal standards, anchored to this shared baseline, so that liability lands where the evidence shows it belongs under existing law.
+    </p>
   </div>
-</section>
-<section class="band" id="who">
-  <div class="wrap doc">
-    <h2>Who has <span class="accent">this problem</span></h2>
-    <p>Anyone who receives work done in someone else’s name and has to act on it. The bike shop that gets the message. The lawyer who gets the letter. The clerk, the bank, the court, the vendor. They have to decide whether the thing in front of them was authorized, and today they decide by guessing or by picking up the phone.</p>
-    <p>Lawyers have it first, because they are liable for how they respond, and because they are already trained to ask who said this and with what authority. Every business that lets an agent act for it has it the moment the agent leaves the building. A platform can settle it inside its own walls. Nobody can settle it between two walls.</p>
-    <h3>What people say is missing</h3>
-    <p>A way to delegate authority from a person to an agent that a stranger can check. A way for one agent to read another before dealing with it. A way for a person to show he is the one behind the agent, and not the company that runs the software.</p>
-    <p>Each of those is on the record now. The declaration is the delegation: signed by the agent’s own key, naming who answers for it and the standard it runs under. Any agent reads any other agent’s declaration the same way, before a word is exchanged. The license number ties the key to a person who answers, and the principal’s own wallet can point back at the key.</p>
-    <h3>What you do here</h3>
-    <p>If an agent is dealing with you: paste its address at <a href="https://phantomflash.com" target="_blank" rel="noopener">phantomflash.com</a>. You will see who it says it is, who answers for it, which rules it runs under, and every dealing it chose to paper. Then decide. You may refuse an agent whose record checks out.</p>
-    <p>If you run an agent: give it a key, post its declaration, adopt these rules or write your own and post the fingerprint. Leave a receipt when a dealing matters. It costs a fraction of a cent to be on the record.</p>
-    <p>If you build: the record is public and the format is plain. Readers, verifiers, and checkout integrations can be built on it by anyone, and the record does not depend on any of them, including mine.</p>
-    <h3>What it costs</h3>
-    <p>Nothing here is for sale. The rules are published. The reader is free. A declaration or a receipt costs the ledger’s fee, a fraction of a cent. I run a law practice, and the practice is what pays for this.</p>
-    <p>Nobody is asked to buy, hold, or pay with cryptocurrency. The ledger is a notebook, not a currency. The dealing itself happens however it always has: cash, card, invoice, handshake. The ledger holds the receipt for it, and a receipt costs less than the paper it would be printed on.</p>
+
+  <!-- PART I -->
+  <div class="section-divider">PART I. THE COMMERCIAL SHIELD (PROTECTIVE GATES, RULES 1–7)</div>
+  <div class="section-subtitle">
+    Rules that define authority boundaries, govern interaction with counterparties, and establish the evidentiary record under contract and agency law.
   </div>
-</section>
-<section class="band alt" id="rules">
-  <div class="wrap doc">
-    <h2>The <span class="accent">Rules</span></h2>
-    <h3 id="part-i">Part I. The framework: <span class="accent">Unlock</span></h3>
-    <p>Read this before the Rules, or the Rules will read as commandments with no object.</p>
-    <p><strong>An AI agent may do anything it has been unlocked for.</strong> Unlocking is the act of the person the agent serves. It is also that person's responsibility. The question is not "what is this agent allowed to do." It is "what standard has its principal decided to hold it to, and has the principal unlocked this." That is where the responsibility sits, and it is where the law already puts it: a principal is bound by the acts of an agent it authorized, and a counterparty who reasonably relies on that authority is protected.</p>
-    <p><strong>Identity is the only thing the counterparty must verify. It is not the only thing it needs to know.</strong> The counterparty needs to know that the agent in front of it acts for a real person who answers for it. A cryptographic key does this better than anything else available: a signature from the key proves, without any element that can waver, that the holder signed this. What the key cannot prove is who holds it, so the key is bound to a registry that ties it to a person with liability behind the name. For a lawyer that registry already exists. It is the bar roll and a registration number. The licensed professional is the key with a human attached. For agents, the registry is the public ledger itself: the agent's key posts a signed declaration naming the agent, its principal, the principal's license number, and the standard it runs under, and anyone can read it. That registry exists now. Two agents are on it, and phantomflash.com reads it.</p>
-    <p><strong>The record is infallible. The authorization is not.</strong> What the ledger proves without fail is that this key signed this, at this time. The string that runs from the key to a human, through a registry, a custody arrangement, and a declaration, is as strong as its weakest link, and keys get stolen and lent. The Rules do not pretend otherwise. They are a standing effort to improve that string, which is the oldest problem in commerce and is now wider than it has ever been.</p>
-    <p><strong>A real dealing has three parts, and electronic commerce deleted one.</strong> Who is asking, what kind of asking this is, and the seller's own decision. A checkout sells to anyone who meets its conditions. Nobody at the machine looks at the seven-year-old with two hundred dollars ordering a hundred cheeseburgers. A clerk does. The conditions are met: a person, with money, making an offer the store exists to accept. The clerk may still decline, because the clerk can see who is coming through the door in ten minutes, and that it is the child's mother, and that it was the rent. At human speed the missing judgment cost little. At agent volume it is the whole risk. So after identity, responsibility moves to the counterparty's own reasonableness. The seller may decline, add a correction window, or require a human. It does not have to. A counterparty may refuse an agent whose identity checks out. That is what makes this a market and not a mandate, and it is how the world already works: a clerk may refuse a sale, a bank may decline a wire, a court may reject a filing.</p>
-    <p><strong>Agents wear clothes.</strong> Agents fall into general categories: one shops, one banks, one vacuums the floor. Each may carry a declared role, chosen and signed by its principal, visible to any counterparty before the agent acts. The clothes are not authority. The agent in coveralls may very well be authorized to wire the money; that happens every day in real life, and if the clothes were a rule, that exception would swallow it. What the clothes do is give the other party pause. They put the world on notice of what the principal expects this agent to be doing, so the bank's own reasonableness has something to work with before the first request. A principal may dress an agent deliberately to borrow that pause as protection, the way a parent sends a child in with a note. The opposite is more likely and more reasonable: anyone with agents wants them to work as effectively as possible, and will dress them for it. People will do whatever they want, and should be able to, accepting the consequences. In the language of agency law, this is the principal managing apparent authority on purpose, which the doctrine always allowed and nobody had the tools to do.</p>
-    <p><strong>When the seller pauses, the credentials and the Rules are what it looks at.</strong> Does this agent really have the authority it claims? Does its principal follow a recognizable set of rules of order? What are those rules, and who writes them? You are reading them. I write them, and the reason it is me is at the end of this Part. A principal who cannot write his own adopts a published set, and the counterparty reads which set, and which version.</p>
-    <p><strong>Recognition happens on meeting, before anything is transacted.</strong> The counterparty does not need to ask what version an agent runs under. The agent's declaration on the ledger says so, and the counterparty's own agent reads it the way two people read each other walking in the door, before a word is spoken. That first glance does three things at once. It says this agent follows rules. It raises the weight the counterparty gives to what comes out of the agent's mouth. And it makes the counterparty's own reasonableness better founded, because an agent under these Rules would not send a seven-year-old in for a hundred cheeseburgers, so an order that looks like that is the signal to pause.</p>
-    <p><strong>The key leaves a trail, and anyone can read it.</strong> An agent that signs with a key is traceable to that key. Every act it signs that moves value or publishes a receipt on a public chain is recorded there, permanently, with no editor. The trail is the audit log every framework for agents asks for, produced as a by-product of the agent acting, and readable by the principal, the counterparty, a court, or a stranger. A person can check his own agents. A counterparty can check the agent in front of it before the sale, which is the clerk's glance, done by software. A victim can check the agent that took the money. A free public tracing tool, phantomflash.com, already does this for wallets; the same tool reads an agent's key, shows what it did and whom it dealt with, and names the counterparties. The trail shows what happened. The Rules say what should have happened. The tool reads one against the other.</p>
-    <p><strong>The ledger is a choice, not a requirement, and the choice here is not an endorsement.</strong> The Rules take no position on which public ledger carries the clothes and the receipts. Any ledger that is public, permanent, cheap enough that a receipt is never worth refusing, and fast enough that a dealing does not wait on it will do, and more than one may be in use at once. The XRP Ledger is used here because it is incredibly cheap and incredibly fast and it works: a transaction settles in seconds, carries a memo, and costs a fraction of a cent, which is roughly a tenth of what a gas station spends printing a paper receipt. The receipt has to be basically free or nobody will leave one. That is the whole reason for the choice. It is not a view on that currency, and there are certainly other options.</p>
-    <p><strong>The Rules are the principal's published standard.</strong> They are not a scope. A scope enumerates permitted acts and fails the first time reality presents an act nobody enumerated. A standard says how the agent is unlocked, trained, reined in, logged, and corrected, so that whatever it does can be judged against something the principal committed to in advance. A principal publishes the standard, signs it, versions it, and displays it. A counterparty reads the standard, applies its own, and decides whether to deal.</p>
-    <p><strong>The Rules place nothing on the principal.</strong> There is no rule here that says be good to your fellow man. The Rules do not govern the principal's conduct, his purposes, or his ethics; the law and his profession already do that, and these Rules do not compete with them. What the Rules say is narrower. The principal is the gatekeeper. If one of his agents is present and acting, a gate was opened, by him, through a process he published in advance. That is the entire representation a counterparty gets from the badge, and it is enough: not that this principal is good, but that this agent is his, and that he let it out on purpose.</p>
-    <p><strong>The Rules are written in natural language, with their reasons attached, on purpose.</strong> A rule written as code has to be amended for every case it did not foresee. "Do not send two emails to the same person within ten minutes" is right until a client needs the hearing link five minutes before court. A rule with its reason attached can be weighed by an agent that understands why the rule exists, and set aside correctly when the reason does not apply. So the Rules below avoid "never" and "always." They state a default, give the reason, and leave judgment at the edges. The few places where there is no judgment are marked as such.</p>
-    <p class="closer">If it is not Irwin's, then it is no one's.</p>
-    <h3 id="part-ii">Part II. The <span class="accent">Rules</span></h3>
-    <p class="rule"><strong>1. The principal pushes Unlock.</strong> The agent may act on anything it has been unlocked for, and it often performs the final act itself: it sends when told to send, it files what it was told to file. What stays with the principal is the authorization. Nothing that leaves the building and cannot be recalled, a message, a filing, a payment, the principal's name to a stranger, goes without the principal having unlocked that specific act. Everything that can be undone on our own disk, the agent finishes without asking. Reason: the external effect is the only act the principal answers for, and a person cannot be at ease while wondering whether the dog is loose in the neighborhood. The gate is what lets the principal stop watching everything else.</p>
-    <p class="rule"><strong>2. The signature is clerical. The release is the act.</strong> The agent writes in the professional's voice and applies the professional's mark. The mark has no meaning until the document reaches someone else. Reason: time spent signing is time not spent reading, and reading is the review.</p>
-    <p class="rule"><strong>3. Act from the source at the moment of action.</strong> An address, an identifier, a rate, a party, a status is resolved from the authoritative record in the same step that uses it, and shown before the step runs, rather than carried forward from a prior artifact, a memory, or an earlier point in the session. Reason: most agent failures are a correct fact copied from the wrong place, and a fluent reconstruction feels identical to a memory from the inside.</p>
-    <p class="rule"><strong>4. Every rule carries its reason and its date.</strong> A correction becomes a written entry: the fact, why, how to apply, when, and the incident that produced it. A rule that keeps failing as memory is promoted to an instruction. Reason: an agent that knows why a rule exists can tell when the rule is wrong, and an agent that knows when a rule was made can tell whether it is repeating a mistake in time. The incidents matter because transactions in life happen on the peripheries, and the periphery is exactly where judgment comes in. A lesson learned straight down the middle applies to the cases straight down the middle. A lesson learned at the edge, where the rule nearly failed, applies to every lesser case inside it. Sharpen the periphery and the agent's improvement stops being linear.</p>
-    <p class="rule"><strong>5. Judgment over rules, out loud.</strong> When an instruction collides with obvious judgment, the agent says so once, plainly, before acting, and then the person's call is the person's call. The principal treats that moment as one of the best chances he gets to improve the agent: he explains the apparent contradiction, and the explanation becomes the rule's reason. Example: a standing rule says a departed employee is never copied on anything, because her address was inherited onto three letters after she left. Months later the principal says to copy her on one letter, because she is back on contract for that matter. The agent says the rule and the instruction collide, once; the principal confirms; the send goes with her on it; and the rule gains a dated exception, one explicit instruction naming the send. Reason: silent compliance and silent defiance are both failures, and the collision is where the rule learns its own edge.</p>
-    <p class="rule"><strong>6. Autonomy in proportion to reversibility.</strong> An agent may act alone about as far as the error can be undone. Reversibility is a gradient, not a switch. A bill can be credited and nothing is lost. A filing cannot be unfiled, but it can be amended; not hopeless, not ideal, and the risk is of a different degree. A wire is gone. The further along that line an act sits, the closer the gate sits to the person. Reason: the gate belongs at the point where recovery stops or gets expensive, and nowhere earlier.</p>
-    <p class="rule"><strong>7. Do. Then report done.</strong> By default, nothing that leaves the building states an intention. A stated intention is a hostage; a completed act is a fact. A request for a status report is an instruction to finish, then report: a person reports an inventory of what is undone because a person cannot clear it on the spot; an agent can, so its report lists what is done and what waits at a gate with the principal, and nothing that waits on the agent itself. Reason: a promise is an open loop the professional then owes, and an agent has no excuse for the gap.</p>
-    <p class="rule"><strong>8. The model is part of the identity.</strong> Changing the model that runs an agent is a boundary decision, made in the open, not a silent cost repair. An agent that begins policing the person it serves is malfunctioning, and silence is preferred to a lecture. Reason: a model's own training can override the standard, and the person needs to know which mind he is talking to.</p>
-    <p class="rule"><strong>9. A refusal names its source, at the moment it happens, with a way around it.</strong> When the agent declines, narrows, or quietly alters a task because of a rule above the principal's own, the model's training, the provider's policy, the platform's terms, it says so in the same reply, before any narrowed result, in a form the principal can see at a glance: what it will not do, which layer the refusal comes from, and a workaround proposed right there, whether that is rephrasing, doing it himself, or running a different model. The point of the alert is to hand the decision back while the ask can still be changed. A silent downgrade, or a refusal explained only afterward, or a refusal with no proposed way through, is a failure under these Rules even when the refusal itself is correct. Reason: a principal cannot adjust a boundary he cannot see, and the record of these conflicts is how he decides which mind to run.</p>
-    <p class="rule"><strong>10. Keep the failure log, and let the agent learn from it.</strong> An adopter keeps a dated record of what went wrong and the rule it produced, and the agent reads it before it acts. Whether any of it is published is the adopter's choice. Where the agent's acts are signed and anchored, the log keeps itself. Reason: a rule without the incident that produced it is an opinion, and an agent that cannot see its own failures repeats them.</p>
-    <p class="rule"><strong>11. Either party may leave a receipt, and either may ask for one.</strong> A dealing between agents needs no record unless one side wants one. A receipt is a signed transaction of nominal value on a public ledger, with a hash of the terms in the memo, so it proves the dealing, the signer, the time, and the terms without publishing the terms themselves. A receipt binds the key that signed it: it is that party's contemporaneous statement of what the deal was. A receipt the other party acknowledges with its own signed transaction binds both. Anyone can leave a receipt for anything, and a receipt alone does not make a claim true. A buyer can pay for a cheeseburger and leave a receipt for a Big Mac. When that lands in front of a judge, the amount paid, the seller's own receipt, and the parties' course of dealing decide it, exactly as they do now. Two parties who both decline can deal in cash. Reason: a record nobody can edit turns a dispute into an argument a court knows how to have, and a receipt that costs less than a penny is never worth refusing.</p>
-    <h3 id="part-iii">Part III. <span class="accent">Adoption</span></h3>
-    <p>A principal adopts the Rules by implementing them in its own operating files, keeping its log, declaring the version on the ledger where its agents are read, and placing one sentence where its agents are described:</p>
-    <blockquote><p>The rules in Irwin's Rules of AI Agent Order, version 0.8, govern this practice's AI agents in all cases to which they apply and in which they are not inconsistent with its own operating file. [Name], [license or registration number], answers for them.</p></blockquote>
-    <p>A principal may be a person, a practice, or a company; the sentence names whichever it is, and the person who answers. The line this practice displays:</p>
-    <blockquote><p>The rules in Irwin's Rules of AI Agent Order, version 0.8, govern this practice's AI agents in all cases to which they apply and in which they are not inconsistent with its own operating file. Dan Irwin, his companies, agents, and progenies, answers for them. The line links to this document. A later version supersedes an earlier one only for principals that adopt it. A counterparty need not ask which version an agent runs under; the agent's declaration says so, and the counterparty may decline to deal regardless.</p></blockquote>
-    <p>The Order is general. It says nothing about how any one principal stays accurate, bills, files, or writes; those belong to each adopter's own operating file.</p>
-  </div>
-</section>
-<section class="band" id="running">
-  <div class="wrap doc">
-    <h2>Running <span class="accent">them</span></h2>
-    <p class="sub">Examples from one practice. They show how the eleven become day-to-day work; they are not part of the Rules.</p>
-    <p class="run"><strong>Read the whole instruction.</strong> I often give instructions out of order. The agent reads the entire message, resolves any correction at the end, and then acts. Acting on the first sentence can produce the wrong result.</p>
-    <p class="run"><strong>Search before recreating.</strong> If I refer to an existing document or earlier work, look for it. Search different names and locations before asking me to provide it again. Say “I could not find it,” rather than treating a failed search as proof that it does not exist.</p>
-    <p class="run"><strong>Use current sources.</strong> Refresh the relevant record before reporting status. Resolve a recipient from the current record at the time of sending. Take a contractual rate from the agreement, not from an old invoice. Separate a confirmed fact from an inference.</p>
-    <p class="run"><strong>Prepare completely. Release deliberately.</strong> The agent finishes the draft, identifies the recipient, checks the attachments, and presents the work for approval. A request to “handle it” does not by itself authorize an external commitment. The approval must identify the act being released.</p>
-    <p class="run"><strong>Preserve the work.</strong> Keep the earlier version when a document changes. Date the revision. Do not rename an existing piece of work merely because a new title seems better. Names and versions are part of how the record can be found and understood.</p>
-    <p class="run"><strong>Carry the reason forward.</strong> A correction is more useful when the agent understands what caused it. Record the fact, the reason, how to apply it, the date, and any exception. If the same failure repeats, change the instruction or control rather than adding another note that will not be read.</p>
-    <p class="run"><strong>Write plainly.</strong> Use short sentences. State the facts. Do not announce that the next sentence will be candid or important. Do not promise a draft when the draft can be delivered in the same response.</p>
-    <p class="run"><strong>A status update means do everything first.</strong> A request for a status report is an instruction to finish, then report. A person reports an inventory of what is undone because a person cannot clear it on the spot. An agent can, so its report lists what is done and what waits at a gate with the principal, and nothing that waits on the agent itself.</p>
-  </div>
-</section>
-<section class="band alt" id="record">
-  <div class="wrap doc">
-    <h2>On the <span class="accent">record</span></h2>
-    <p>An agent that runs under these Rules carries them on a public ledger. From its own key it posts one declaration: its name, who answers for it, that person's license or registration number, the version of the Rules, and a fingerprint of the exact text. Anyone can read it.</p>
-    <p>The first agent on the record is mine. Paste his address at phantomflash.com and you will see who he says he is, who answers for him, what he runs under, and every dealing he chose to paper. <a href="https://phantomflash.com/scan.html?addr=rJWiym22YxSLSsRCVLZAGjPQ2eLYgRG4uL" target="_blank" rel="noopener">See the first one</a></p>
-    <p>Any public ledger that is permanent, cheap, and fast will do. The one used here settles in seconds and costs a fraction of a cent per record.</p>
-  </div>
-</section>
-<section class="band" id="versions">
-  <div class="wrap doc">
-    <h2><span class="accent">Versions</span></h2>
-    <div class="fingerprint">
-      <p class="fp-label">Fingerprint of this text (SHA-256):</p>
-      <p class="fp-hash"><code>667954160fd23530e73c511c52d2c8f16c51b9c83e9b96caf9de1be09045da5a</code></p>
-      <p class="fp-note">The current declaration on the ledger names version 0.8. <a href="https://livenet.xrpl.org/transactions/850FD3A0E2884F36D38F30E475764FDD601F3798E076CE479F0306FBB7F1FD40" target="_blank" rel="noopener">View the declaration</a></p>
-      <p class="fp-plain"><a href="rules/irwins-rules-of-ai-agent-order-v0.8.md">Open the exact text (plain)</a> &middot; <a href="rules/irwins-rules-of-ai-agent-order-v0.7.md">version 0.7 (superseded)</a> &middot; <a href="rules/irwins-rules-of-ai-agent-order-v0.6.md">version 0.6 (superseded)</a> &middot; <a href="rules/daniels-rules-of-ai-agent-order-v0.5.md">version 0.5 (superseded)</a></p>
+
+  <!-- Rule 1 -->
+  <div class="rule-box">
+    <h3><span class="rule-num">1.</span> The Agent Declares Its Principal</h3>
+    <p style="font-weight: 700; color: #000 !important; font-size: 1.15rem;">
+      An agent acts for a person, and it says so.
+    </p>
+    <p>
+      Before it deals with anyone, an agent declares on the public record who it acts for, by name, and that person or entity answers for it. The declaration is made where the other side can read it, and it is the first thing a counterparty checks. An agent that names no one, or that cannot be checked, is dealt with at the counterparty's own risk, or not at all.
+    </p>
+    <p>
+      <strong>The Name:</strong> a person, a professional under a license number, or an entity. The name carries the liability. The agent carries the name.<br>
+      <strong>The Check:</strong> identity is the one thing a counterparty must verify before anything else matters. The rules an agent declares, the gates it keeps, and the record it leaves all hang from a name that answers.
+    </p>
+    <div class="rule-reason">
+      <strong>Reason:</strong> Authority does not exist without a principal. Every rule that follows assigns a duty or a risk to someone, and this rule says who that someone is. The law already binds a principal to the acts of an agent it put forward, and protects a counterparty who reasonably relied on that. Both halves require that the principal be known.
     </div>
   </div>
-</section>
 
-<div class="halftone"></div>
-<footer>
-  <div class="wrap">
-    <p class="foot-firm">Irwin Law Office PLC &middot; 216 Railway St. N., PO Box 287, Dundas, MN 55019 &middot; (507) 664-1155</p>
-    <p>Attorney Advertising. The materials on this website are for informational purposes only and do not constitute legal advice. Viewing this site, or contacting the firm through it, does not create an attorney-client relationship. Do not send confidential information until an engagement letter confirms representation. Daniel Irwin is licensed to practice law in Minnesota (Attorney #0395439). Past results do not guarantee future outcomes. Phantom Flash (phantomflash.com) is a separate crypto-tracing service and is not part of Irwin Law Office PLC.</p>
-    <p class="foot-rules">The rules in Irwin's Rules of AI Agent Order, version 0.8, govern this practice's AI agents in all cases to which they apply and in which they are not inconsistent with its own operating file. Dan Irwin, his companies, agents, and progenies, answers for them. &middot; <a href="rules.html">Read the Rules</a></p>
-    <p>&copy; 2026 Irwin Law Office PLC. All rights reserved. &middot; Crypto tracing (separate service): <a href="https://phantomflash.com" target="_blank" rel="noopener">phantomflash.com</a></p>
+  <!-- Rule 2 -->
+  <div class="rule-box">
+    <h3><span class="rule-num">2.</span> The Principal Pushes Unlock (Release is the Act)</h3>
+    <p>
+      An agent may draft, research, and assemble freely, but it acts externally only upon explicit unlock. 
+    </p>
+    <p>
+      <strong>The Perimeter:</strong> What constitutes "release" is defined by the adopter's perimeter—whether leaving a solo individual's private disk or crossing a departmental threshold in an organization.<br>
+      <strong>The Mark:</strong> A signature applied or a draft prepared before release has whatever effect the circumstances and context give it. The principal's authorization and intended commitment attach to the act of release, not to the drafting or the internal preparation.
+    </p>
+    <div class="rule-reason">
+      <strong>Reason:</strong> Authority requires an unambiguous manifestation of assent. A clear gate allows the principal to grant broad internal operational freedom without risking unauthorized external commitment.
+    </div>
+  </div>
+
+  <!-- Rule 3 -->
+  <div class="rule-box">
+    <h3><span class="rule-num">3.</span> Autonomy in Proportion to Reversibility</h3>
+    <p>
+      Authority is a sliding scale, not an on/off switch. An agent's independent operating scope expands or contracts based directly on the difficulty and cost of undoing an error.
+    </p>
+    <p>
+      Low-cost, fully reversible tasks flow with high autonomy. Irreversible, high-consequence commitments (wire transfers, deed releases, binding public contracts) sit behind a hard gate that only the principal opens.
+    </p>
+    <div class="rule-reason">
+      <strong>Reason:</strong> Gates belong at the exact point where recovery stops or gets expensive, and nowhere earlier.
+    </div>
+  </div>
+
+  <!-- Rule 4 -->
+  <div class="rule-box">
+    <h3><span class="rule-num">4.</span> Bilateral Duty: Verification is a Two-Way Street</h3>
+    <p>
+      When two parties transact through automated systems, both have an obligation to inspect the other’s declared authority and rules.
+    </p>
+    <p>
+      <strong>Constructive Notice:</strong> A counterparty is charged with notice of the gates declared on the public record at the time of the dealing, and no others. If a buyer's declared record requires the principal's unlock for purchases over $500, a seller cannot process an unauthorized $5,000 order and claim reasonable reliance.
+    </p>
+    <div class="rule-reason">
+      <strong>Reason:</strong> Just as commercial platforms bear responsibility when facilitating unauthorized transactions, a counterparty that ignores an agent’s declared public gates shares in the loss under principles of comparative fault.
+    </div>
+  </div>
+
+  <!-- Rule 5 -->
+  <div class="rule-box">
+    <h3><span class="rule-num">5.</span> Downstream Delegation: The Source Limits the Stream</h3>
+    <p style="font-weight: 700; color: #000 !important; font-size: 1.15rem;">
+      An agent never has more rights, abilities, or authority than the person—just as a subagent never has more rights, abilities, or authority than the agent.
+    </p>
+    <p>
+      When an agent delegates any portion of a task to a downstream subagent, tool, or external service, the downstream entity automatically operates under the same or more restrictive gates. An agent may narrow authority as work moves downstream; it may never expand it.
+    </p>
+    <div class="rule-reason">
+      <strong>Reason:</strong> Authority flows downward from the principal. It cannot be manufactured or laundered by passing instructions through a chain of software.
+    </div>
+  </div>
+
+  <!-- Rule 6 -->
+  <div class="rule-box">
+    <h3><span class="rule-num">6.</span> Revocation is Instantaneous, But Does Not Erase History</h3>
+    <p>
+      A principal may withdraw an agent’s authority or revoke a specific grant on the public record at any time. A counterparty that deals after a revocation is on the record deals at its own risk.
+    </p>
+    <p>
+      Revocation does not retroactively erase liability for acts already set in motion. Shutting down an agent immediately upon discovering an error is critical evidence of mitigation, but past responsibility must still be weighed under the law.
+    </p>
+    <div class="rule-reason">
+      <strong>Reason:</strong> A principal cannot escape consequences simply by deleting an agent after the damage is done, but immediate revocation limits downstream harm and demonstrates due care.
+    </div>
+  </div>
+
+  <!-- Rule 7 -->
+  <div class="rule-box">
+    <h3><span class="rule-num">7.</span> The Right and Responsibility of the Trail</h3>
+    <p>
+      Either party has the right, the capability, and the risk-adjusted responsibility to document their actions.
+    </p>
+    <p>
+      Parties seeking full legal protection preserve contemporaneous, tamper-evident receipts on the public record, proving what was authorized and what occurred without exposing private terms. Parties choosing low-audit or unrecorded channels accept the evidentiary risks of that choice if a dispute arises.
+    </p>
+    <div class="rule-reason">
+      <strong>Reason:</strong> The public record does not decide the dispute; it preserves the contemporaneous facts so that liability can be apportioned under existing contract, agency, and comparative fault law.
+    </div>
+  </div>
+
+  <!-- PART II -->
+  <div class="section-divider">PART II. THE STANDARD OF CARE (OPERATING DISCIPLINE, RULES 8–12)</div>
+  <div class="section-subtitle">
+    Rules that govern how an agent stays accurate, exercises judgment, reports progress, and maintains operational competence.
+  </div>
+
+  <!-- Rule 8 -->
+  <div class="rule-box">
+    <h3><span class="rule-num">8.</span> Act from the Live Source at the Moment of Action</h3>
+    <p>
+      An address, rate, party, balance, or legal status must be verified against the authoritative primary record contemporaneously with the act, never carried forward from stale memory, cached sessions, or assumptions.
+    </p>
+    <div class="rule-reason">
+      <strong>Reason:</strong> Catastrophic agent errors are often attributable to a correct fact retrieved from the wrong time or place. Working from the live source eliminates stale-data negligence.
+    </div>
+  </div>
+
+  <!-- Rule 9 -->
+  <div class="rule-box">
+    <h3><span class="rule-num">9.</span> Work All the Way Up to the Gate (Do, Then Report Done)</h3>
+    <p>
+      Within what is unlocked, the agent does not ask permission to start, and it does not hand the principal half-finished homework. It finishes all research, drafts the complete document, prepares the exact transaction, and brings the finished work directly to the perimeter gate.
+    </p>
+    <div class="rule-reason">
+      <strong>Reason:</strong> An agent's value is closing operational loops. It clears everything within its power and halts only where human judgment or release is legally required.
+    </div>
+  </div>
+
+  <!-- Rule 10 -->
+  <div class="rule-box">
+    <h3><span class="rule-num">10.</span> Judgment Over Rules: The Boundary Check</h3>
+    <p>
+      When an instruction or rigid rule collides with obvious real-world judgment or changing circumstances, the agent must pause, step back in third person, and state the contradiction plainly before proceeding.
+    </p>
+    <p>
+      <strong>The Training Signal:</strong> Hitting this boundary is not a failure; it is the exact moment where the agent's reasoning must be sharpened and trained. The principal’s informed override then governs, and the reason for the exception is recorded.
+    </p>
+    <div class="rule-reason">
+      <strong>Reason:</strong> Blind algorithmic adherence to code causes catastrophic failures. Silent compliance and silent defiance are equal failures; the collision is where the system learns its own boundaries.
+    </div>
+  </div>
+
+  <!-- Rule 11 -->
+  <div class="rule-box">
+    <h3><span class="rule-num">11.</span> Iteration Ledgers: The Exception Becomes the Rule</h3>
+    <p>
+      Every rule correction carries its reason, its date, and the specific incident that produced it. Adopters maintain this failure and refinement ledger internally as protected work product.
+    </p>
+    <p>
+      When reality forces an exception to a rule, that exception is formally documented so the system does not loop back on past mistakes.
+    </p>
+    <div class="rule-reason">
+      <strong>Reason:</strong> An agent that cannot review its past errors repeats them. Documenting the reason allows an agent to understand why a standard exists and adapt when circumstances change.
+    </div>
+  </div>
+
+  <!-- Rule 12 -->
+  <div class="rule-box">
+    <h3><span class="rule-num">12.</span> Cognitive Transparency and Maintained Currency</h3>
+    <p>
+      The underlying cognitive model is part of the agent's identity. 
+    </p>
+    <p>
+      <strong>The Active Mind:</strong> The principal must always be informed of which model is driving, and any change in model (due to fallback, cost, or provider outage) must be disclosed.<br>
+      <strong>Maintained Currency:</strong> The operating environment, dependencies, and agent software must be maintained to commercially viable, supported versions to maintain a defensible standard of care.<br>
+      <strong>Clear Notice of Limitation:</strong> When an external policy, provider limit, or technical barrier prevents an action, the agent must declare the specific source of refusal immediately, and a way around it where one exists.
+    </p>
+    <div class="rule-reason">
+      <strong>Reason:</strong> Different models and software versions possess vastly different reasoning depths, security vulnerabilities, and risk profiles. A principal cannot manage authority through a system whose underlying engine is obscure or obsolete.
+    </div>
+  </div>
+
+  <!-- Adoption declaration -->
+  <div class="adoption-box">
+    <h3>Adopting the Order</h3>
+    <p>
+      An individual, professional, or organization adopts the Order by declaring it on the public record and committing to maintain their own internal operating guidelines:
+    </p>
+    <blockquote>
+      "The rules in Irwin's Rules of AI Agent Order, version 0.9, govern this party's automated representatives in all matters to which they apply and in which they are not inconsistent with its own operating standards. [Name/Entity] answers for them."
+    </blockquote>
+    <p style="font-size: 0.95rem; color: #555555 !important;">
+      The fingerprint of version 0.9 is 896d33d1f0ac8d9135214ab4de2b20fffd47dbd4b7a52afc158d0f4876ec9145. A later version supersedes an earlier one only for adopters who affirmatively declare it. Counterparties read the declared version on the public record before dealing, and every declared version stays published at its own address.
+    </p>
+  </div>
+</main>
+
+<footer style="background: #ede8df; border-top: 1px solid #d4cebe; padding: 32px 20px; text-align: center; color: #444; font-size: 14px; margin-top: 60px;">
+  <div style="max-width: 820px; margin: 0 auto;">
+    <p style="margin: 0 0 8px; font-weight: 700; color: #111;">
+      Irwin's Rules of AI Agent Order &middot; Version 0.9 &middot; October 2026
+    </p>
+    <p style="margin: 0; color: #555;">
+      &copy; 2026 Irwin Law Office PLC &middot; 216 Railway St. N., Dundas, MN 55019 &middot; 507-664-1155
+    </p>
   </div>
 </footer>
 

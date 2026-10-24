@@ -54,3 +54,50 @@ footer a:hover { color: var(--red); }
 
 .doc h3{font-family:inherit;font-size:1.05em;letter-spacing:.08em;text-transform:uppercase;margin:1.8em 0 .5em;color:#2f4a63}
 .doc blockquote{margin:.6em 0 .9em 1.2em;padding-left:1em;border-left:3px solid #9bb7d0;font-style:italic}
+
+
+/* High-contrast ink overrides for v0.9 rules on light paper */
+body {
+  color: #1a1a1a !important;
+}
+main.wrap {
+  color: #1a1a1a !important;
+}
+main.wrap h1, main.wrap h2, main.wrap h3, main.wrap h4 {
+  color: #111111 !important;
+}
+main.wrap p, main.wrap li {
+  color: #242424 !important;
+}
+main.wrap strong {
+  color: #000000 !important;
+}
+main.wrap .part-header {
+  color: #111111 !important;
+  border-bottom: 2px solid #8c6a28 !important;
+}
+main.wrap .rule-card {
+  background: #ffffff !important;
+  border: 1px solid #d4cebe !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04) !important;
+}
+main.wrap .rule-card h3 {
+  color: #111111 !important;
+}
+main.wrap .rule-card .r-num {
+  color: #8c6a28 !important;
+}
+main.wrap .rule-card .reason {
+  background: #ede8df !important;
+  border-left: 3px solid #8c6a28 !important;
+  color: #333333 !important;
+}
+main.wrap .rule-card .reason strong {
+  color: #111111 !important;
+}
+main.wrap .rules-intro-box {
+  background: #ffffff !important;
+  border: 1px solid #d4cebe !important;
+  border-left: 4px solid #8c6a28 !important;
+  color: #222222 !important;
+}
