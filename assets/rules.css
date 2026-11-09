@@ -1,103 +1,54 @@
-/* Rules pages: archival palette. Off-white paper, slate ink, light blue accent.
-   Loaded after style.css on rules.html and rules-operating-file.html only. */
-:root {
-  --black: #f6f3ec;     /* page: off-white paper */
-  --panel: #edf2f7;     /* alternate bands: pale blue */
-  --panel-2: #e4ecf3;   /* quotes, code, table heads */
-  --red: #4f84b4;       /* accent: light blue, readable on paper */
-  --red-dark: #3a6a96;
-  --white: #1c2733;     /* ink: slate */
-  --gray: #5e6b78;
-  --line: #d3dde6;
-}
-body { background: var(--black); color: var(--white); }
-header { background: rgba(246,243,236,0.94); border-bottom: 2px solid var(--red); }
-.wordmark, .wordmark span { text-shadow: none; }
-.wordmark { color: var(--white); }
-.wordmark span { color: var(--red); }
-nav a { color: var(--white); }
-nav a:hover, nav a.active { color: var(--red); }
-.nav-toggle { color: var(--white); }
-@media (max-width: 720px) { nav { background: var(--black); } }
-h3 { color: var(--white); }
-.page-hero { background: var(--panel); border-bottom: 4px solid var(--red); }
-.hero p.lede, .fingerprint p { color: #3b4a5a; }
-.fingerprint .fp-label { color: var(--gray); }
-code { background: #eef3f7; border: 1px solid var(--line); color: var(--white); }
-.doc blockquote { background: var(--panel-2); border-left-color: var(--red); }
-.doc p.rule { border-left-color: var(--red); }
-.coa { background: var(--panel-2); border-color: var(--red); }
-.btn { background: var(--red); color: #ffffff; border-color: var(--red); }
-.btn:hover { background: transparent; color: var(--red); }
-.halftone { opacity: 0.35; }
-footer { color: var(--gray); border-top: 1px solid var(--line); }
-footer a { color: var(--gray); }
-footer a:hover { color: var(--red); }
-.foot-firm, .foot-rules { color: var(--white); }
-.doc-table th { background: var(--panel-2); color: var(--white); }
-@media (max-width: 720px) { .doc-table tr { background: var(--panel-2); } }
+/* Rules pages (rules.html, rules/v0.8.html, rules/v0.9.html). Loaded after style.css.
+   Same ivory / ink / coral / plate vocabulary as youisyou, so the Rules read the same on both sites. */
 
-/* One-page layout (v0.8) */
-.thesis { max-width: 46rem; margin-top: 0.5rem; }
-.thesis p { font-size: 1.3rem; line-height: 1.55; margin: 0 0 0.9rem; color: var(--white); }
-.thesis a { color: var(--red-dark); text-decoration: underline; }
-.thesis .small, .thesis .small a { font-size: 0.9rem; }
-.doc p.sig { text-align: right; font-weight: 600; }
-.doc p.closer { font-weight: 600; font-size: 1.1rem; margin-top: 1.5rem; }
-.doc p.sub { color: var(--gray); font-style: italic; }
-.doc p.run { border-left: 3px solid var(--red); padding-left: 1rem; }
-.doc a { color: var(--red-dark); }
+.fingerprint { max-width: 46rem; border-left: 3px solid var(--accent); padding-left: 16px; margin-top: 18px; }
+.fingerprint p, .fp { overflow-wrap: anywhere; margin-bottom: 8px; color: var(--muted); font-size: 15px; }
+.fingerprint .fp-label { font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.fingerprint .fp-note { font-size: 14px; }
+.fingerprint .fp-plain { margin: 12px 0 0; font-weight: 700; color: var(--text); }
 .fp-hash code { word-break: break-all; overflow-wrap: anywhere; }
-.doc h3 { scroll-margin-top: 5rem; }
+.page-hero .lead { font-size: 1.15rem; color: var(--muted); max-width: 40rem; }
 
-.fn{font-size:.9em;color:#4a5a6a;margin-top:1.2em;border-top:1px solid #d6dde4;padding-top:.8em}
+.doc > p, .doc > ul, .doc > ol, .doc > blockquote { max-width: 46rem; }
+.doc h2 { scroll-margin-top: 16px; }
+.doc h3 { margin-top: 24px; }
+.doc ol { margin: 0 0 14px 1.5rem; }
+.doc a { color: var(--link); }
+.doc p.rule, .doc p.run { border-left: 3px solid var(--accent); padding-left: 16px; }
+.doc p.sig { text-align: right; font-weight: 700; }
+.doc p.closer { font-weight: 700; font-size: 1.1rem; margin-top: 24px; }
+.doc p.sub { color: var(--muted); font-style: italic; }
+.doc blockquote { margin: 0 0 14px; padding: 12px 18px; border-left: 3px solid var(--accent); background: var(--surface-2); border-radius: 0 10px 10px 0; }
+.doc blockquote p { margin: 0; }
+.doc .coa p { margin-bottom: 14px; }
+.band.alt .doc blockquote { background: var(--bg); }
+.fn { font-size: 14px; color: var(--muted); margin-top: 20px; border-top: 1px solid var(--hairline); padding-top: 12px; }
+.cards.stack { grid-template-columns: 1fr; max-width: 46rem; }
 
-.doc h3{font-family:inherit;font-size:1.05em;letter-spacing:.08em;text-transform:uppercase;margin:1.8em 0 .5em;color:#2f4a63}
-.doc blockquote{margin:.6em 0 .9em 1.2em;padding-left:1em;border-left:3px solid #9bb7d0;font-style:italic}
+.doc-table { overflow-x: auto; margin: 0 0 20px; -webkit-overflow-scrolling: touch; }
+.doc-table table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: 15px; line-height: 1.5; }
+.doc-table th, .doc-table td { border: 1px solid var(--hairline); padding: 10px 12px; text-align: left; vertical-align: top; }
+.doc-table th { background: var(--surface-2); font-weight: 700; }
+@media (max-width: 720px) {
+  .doc-table table, .doc-table tbody, .doc-table tr, .doc-table td { display: block; width: 100%; min-width: 0; }
+  .doc-table thead { display: none; }
+  .doc-table tr { border: 1px solid var(--hairline); border-radius: 10px; margin-bottom: 12px; background: var(--surface); }
+}
 
-
-/* High-contrast ink overrides for v0.9 rules on light paper */
-body {
-  color: #1a1a1a !important;
-}
-main.wrap {
-  color: #1a1a1a !important;
-}
-main.wrap h1, main.wrap h2, main.wrap h3, main.wrap h4 {
-  color: #111111 !important;
-}
-main.wrap p, main.wrap li {
-  color: #242424 !important;
-}
-main.wrap strong {
-  color: #000000 !important;
-}
-main.wrap .part-header {
-  color: #111111 !important;
-  border-bottom: 2px solid #8c6a28 !important;
-}
-main.wrap .rule-card {
-  background: #ffffff !important;
-  border: 1px solid #d4cebe !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04) !important;
-}
-main.wrap .rule-card h3 {
-  color: #111111 !important;
-}
-main.wrap .rule-card .r-num {
-  color: #8c6a28 !important;
-}
-main.wrap .rule-card .reason {
-  background: #ede8df !important;
-  border-left: 3px solid #8c6a28 !important;
-  color: #333333 !important;
-}
-main.wrap .rule-card .reason strong {
-  color: #111111 !important;
-}
-main.wrap .rules-intro-box {
-  background: #ffffff !important;
-  border: 1px solid #d4cebe !important;
-  border-left: 4px solid #8c6a28 !important;
-  color: #222222 !important;
-}
+/* version 0.9 archive page */
+.rules-wrapper { max-width: 720px; margin: 0 auto; padding: 28px 16px 24px; }
+.intro-callout { background: var(--surface); border: 1px solid var(--hairline); border-left: 3px solid var(--accent); border-radius: 14px; padding: 18px 20px; margin-bottom: 28px; }
+.intro-callout p:last-child { margin-bottom: 0; }
+.section-divider { font-size: 22px; line-height: 1.25; margin: 36px 0 8px; padding-bottom: 8px; border-bottom: 1px solid var(--hairline); }
+.section-subtitle { color: var(--muted); margin-bottom: 18px; }
+.rule-box { background: var(--surface); border: 1px solid var(--hairline); border-radius: 14px; padding: 18px 20px; margin-bottom: 14px; box-shadow: 0 1px 3px rgba(23,51,74,.05); }
+.rule-box h3 { font-size: 18px; margin: 0 0 10px; }
+.rule-box .rule-num { color: var(--link); font-weight: 800; }
+.rule-box p:last-child { margin-bottom: 0; }
+.rule-reason { background: var(--plate); border: 1px solid var(--plate-edge); border-radius: 10px; padding: 12px 16px; margin-top: 12px; font-size: 15px; }
+.adoption-box { background: var(--plate); border: 1px solid var(--plate-edge); border-radius: 14px; padding: 18px 20px; margin-top: 32px; }
+.adoption-box blockquote { margin: 12px 0; padding: 10px 16px; border-left: 3px solid var(--accent); background: var(--bg); border-radius: 0 10px 10px 0; font-style: italic; }
+main, .fingerprint, .doc, .card, .coa, blockquote { min-width: 0; }
+.doc p, .doc li, .doc blockquote, .card p, .coa p, .fingerprint p { overflow-wrap: anywhere; }
+.band.alt .coa, .doc .coa { overflow-wrap: anywhere; }
+.page-hero p, .rules-wrapper p { overflow-wrap: anywhere; }
