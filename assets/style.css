@@ -229,3 +229,24 @@ footer a:hover { color: var(--link-hover); }
 
 /* the attorney line on the office card stays on one line at desktop */
 @media (min-width: 900px) { .plate-id { white-space: nowrap; font-size: 12.5px; letter-spacing: 0; } }
+
+/* long-form practice pages */
+.article { max-width: 720px; }
+.article h2 { margin: 44px 0 12px; }
+.article h2:first-child { margin-top: 0; }
+.article h3 { font-size: 19px; line-height: 1.3; margin: 26px 0 6px; }
+.article p { margin: 0 0 16px; }
+.article ul { margin: 0 0 18px; padding-left: 20px; }
+.article li { margin: 0 0 10px; line-height: 1.65; }
+.article a { color: var(--link); }
+.article .fine { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--hairline); }
+.article ul.related { list-style: none; padding: 0; display: grid; gap: 8px; }
+.article ul.related li { margin: 0; }
+.article ul.related a { font-weight: 600; text-decoration: none; }
+.article ul.related a:hover { text-decoration: underline; }
+.card .more { display: inline-block; margin-top: 12px; font-weight: 600; color: var(--link); text-decoration: none; }
+.card .more:hover { text-decoration: underline; }
+.page-hero .kicker a { color: inherit; }
+
+/* header: one line on every page */
+.top .wrap { max-width: 1012px; }
