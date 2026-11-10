@@ -223,4 +223,4 @@ footer a:hover { color: var(--link-hover); }
 
 /* phone: header links and footer links reach 44px tap height */
 @media (max-width: 560px) { .nav a:not(.btn) { display: inline-flex; align-items: center; min-height: 44px; } .nav a.btn { min-height: 44px; } footer a { display: inline-block; padding: 12px 0; } }
-@media (max-width: 560px) { .top .mark { display: inline-flex; align-items: center; min-height: 44px; } .home .plate-card dd a { display: inline-block; padding: 13px 0; margin: -13px 0; } }
+@media (max-width: 560px) { .top .mark { display: inline-block; line-height: 44px; } .home .plate-card dd a { display: inline-block; padding: 13px 0; margin: -13px 0; } }
