@@ -54,16 +54,16 @@
       <h2>The office</h2>
       <p><strong>Address</strong>216 Railway St. N.<br>PO Box 287<br>Dundas, MN 55019</p>
       <p><strong>Phone</strong><a href="tel:5076641155">(507) 664-1155</a></p>
+      <p><strong>Email</strong><a id="office-email" href="#contact-form">Use the form on this page</a></p>
       <p><a class="btn tel" href="tel:5076641155">Call (507) 664-1155</a></p>
       <p><strong>Crypto tracing (separate service)</strong><a href="https://phantomflash.com" target="_blank" rel="noopener">phantomflash.com</a></p>
       <p class="todo-note">Do not send confidential details through this page. Until you have an engagement letter, information you send may not be privileged.</p>
     </div>
     <div>
       <h2>Send a message</h2>
-      <!-- FormSubmit endpoint (activated 2026-07-24). Action + cc are assembled at submit time so no
-           address appears in static markup for scrapers. Delivers to irwin@ with cc loralee@. -->
+      <!-- FormSubmit endpoint (activated 2026-07-24). The action is assembled in the browser so no
+           address appears in static markup for scrapers. Delivers to the attorney only; no cc. -->
       <form id="contact-form" action="#" method="POST">
-        <input type="hidden" name="_cc" value="">
         <input type="hidden" name="_subject" value="New inquiry — irwinlawmn.com">
         <input type="hidden" name="_template" value="table">
         <label for="name">Your name</label>
@@ -87,7 +87,8 @@
         var f=document.getElementById("contact-form");
         var d=atob("aXJ3aW5sYXdtbi5jb20=");
         f.action="https://formsubmit.co/"+atob("aXJ3aW4=")+"@"+d;
-        f.querySelector("input[name=_cc]").value=atob("bG9yYWxlZQ==")+"@"+d;
+        var e=document.getElementById("office-email");
+        if(e){var m=atob("aXJ3aW4=")+"@"+d; e.href="mailto:"+m; e.textContent=m;}
       })();
       </script>
     </div>
