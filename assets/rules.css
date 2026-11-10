@@ -1,24 +1,25 @@
 /* Rules pages (rules.html, rules/v0.8.html, rules/v0.9.html). Loaded after style.css.
-   Same ivory / ink / coral / plate vocabulary as youisyou, so the Rules read the same on both sites. */
+   Same paper / ink / steel-blue / plate vocabulary as the rest of the site. */
 
 .fingerprint { max-width: 46rem; border-left: 3px solid var(--accent); padding-left: 16px; margin-top: 18px; }
 .fingerprint p, .fp { overflow-wrap: anywhere; margin-bottom: 8px; color: var(--muted); font-size: 15px; }
-.fingerprint .fp-label { font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.fingerprint .fp-label { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 4px; }
 .fingerprint .fp-note { font-size: 14px; }
-.fingerprint .fp-plain { margin: 12px 0 0; font-weight: 700; color: var(--text); }
+.fingerprint .fp-plain { margin: 12px 0 0; font-weight: 600; color: var(--text); }
 .fp-hash code { word-break: break-all; overflow-wrap: anywhere; }
-.page-hero .lead { font-size: 1.15rem; color: var(--muted); max-width: 40rem; }
+.page-hero .lead { font-size: 19px; line-height: 1.55; color: var(--muted); max-width: 40rem; }
 
 .doc > p, .doc > ul, .doc > ol, .doc > blockquote { max-width: 46rem; }
 .doc h2 { scroll-margin-top: 16px; }
 .doc h3 { margin-top: 24px; }
+.rule-num { color: var(--link); }
 .doc ol { margin: 0 0 14px 1.5rem; }
 .doc a { color: var(--link); }
 .doc p.rule, .doc p.run { border-left: 3px solid var(--accent); padding-left: 16px; }
 .doc p.sig { text-align: right; font-weight: 700; }
 .doc p.closer { font-weight: 700; font-size: 1.1rem; margin-top: 24px; }
 .doc p.sub { color: var(--muted); font-style: italic; }
-.doc blockquote { margin: 0 0 14px; padding: 12px 18px; border-left: 3px solid var(--accent); background: var(--surface-2); border-radius: 0 10px 10px 0; }
+.doc blockquote { margin: 0 0 14px; padding: 12px 18px; border-left: 3px solid var(--accent); background: var(--surface-2); border-radius: 0 8px 8px 0; }
 .doc blockquote p { margin: 0; }
 .doc .coa p { margin-bottom: 14px; }
 .band.alt .doc blockquote { background: var(--bg); }
@@ -32,22 +33,22 @@
 @media (max-width: 720px) {
   .doc-table table, .doc-table tbody, .doc-table tr, .doc-table td { display: block; width: 100%; min-width: 0; }
   .doc-table thead { display: none; }
-  .doc-table tr { border: 1px solid var(--hairline); border-radius: 10px; margin-bottom: 12px; background: var(--surface); }
+  .doc-table tr { border: 1px solid var(--hairline); border-radius: 8px; margin-bottom: 12px; background: var(--surface); }
 }
 
 /* version 0.9 archive page */
 .rules-wrapper { max-width: 720px; margin: 0 auto; padding: 28px 16px 24px; }
-.intro-callout { background: var(--surface); border: 1px solid var(--hairline); border-left: 3px solid var(--accent); border-radius: 14px; padding: 18px 20px; margin-bottom: 28px; }
+.intro-callout { background: var(--surface); border: 1px solid var(--hairline); border-left: 3px solid var(--accent); border-radius: 8px; padding: 18px 20px; margin-bottom: 28px; }
 .intro-callout p:last-child { margin-bottom: 0; }
-.section-divider { font-size: 22px; line-height: 1.25; margin: 36px 0 8px; padding-bottom: 8px; border-bottom: 1px solid var(--hairline); }
+.section-divider { font-family: var(--serif); font-weight: 600; letter-spacing: -0.01em; font-size: 24px; line-height: 1.25; margin: 36px 0 8px; padding-bottom: 8px; border-bottom: 1px solid var(--hairline); }
 .section-subtitle { color: var(--muted); margin-bottom: 18px; }
-.rule-box { background: var(--surface); border: 1px solid var(--hairline); border-radius: 14px; padding: 18px 20px; margin-bottom: 14px; box-shadow: 0 1px 3px rgba(23,51,74,.05); }
+.rule-box { background: var(--surface); border: 1px solid var(--hairline); border-radius: 8px; padding: 18px 20px; margin-bottom: 14px; }
 .rule-box h3 { font-size: 18px; margin: 0 0 10px; }
-.rule-box .rule-num { color: var(--link); font-weight: 800; }
+.rule-box .rule-num { color: var(--link); font-weight: 600; }
 .rule-box p:last-child { margin-bottom: 0; }
-.rule-reason { background: var(--plate); border: 1px solid var(--plate-edge); border-radius: 10px; padding: 12px 16px; margin-top: 12px; font-size: 15px; }
-.adoption-box { background: var(--plate); border: 1px solid var(--plate-edge); border-radius: 14px; padding: 18px 20px; margin-top: 32px; }
-.adoption-box blockquote { margin: 12px 0; padding: 10px 16px; border-left: 3px solid var(--accent); background: var(--bg); border-radius: 0 10px 10px 0; font-style: italic; }
+.rule-reason { background: var(--plate); border: 1px solid var(--plate-edge); border-radius: 8px; padding: 12px 16px; margin-top: 12px; font-size: 15px; }
+.adoption-box { background: var(--plate); border: 1px solid var(--plate-edge); border-radius: 8px; padding: 18px 20px; margin-top: 32px; }
+.adoption-box blockquote { margin: 12px 0; padding: 10px 16px; border-left: 3px solid var(--accent); background: var(--bg); border-radius: 0 8px 8px 0; font-style: italic; }
 main, .fingerprint, .doc, .card, .coa, blockquote { min-width: 0; }
 .doc p, .doc li, .doc blockquote, .card p, .coa p, .fingerprint p { overflow-wrap: anywhere; }
 .band.alt .coa, .doc .coa { overflow-wrap: anywhere; }
