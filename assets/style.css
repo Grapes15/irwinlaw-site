@@ -250,3 +250,10 @@ footer a:hover { color: var(--link-hover); }
 
 /* header: one line on every page */
 .top .wrap { max-width: 1012px; }
+
+/* home: crypto as a quiet line under the family-law cards */
+.also { margin: 24px 0 0; padding: 16px 0 0; border-top: 1px solid var(--hairline); color: var(--muted); font-size: 15px; line-height: 1.6; max-width: 760px; }
+.also strong { color: var(--text); font-weight: 600; }
+.also a { color: var(--link); font-weight: 600; text-decoration: none; white-space: nowrap; }
+.also a:hover { text-decoration: underline; }
+.door h2 { font-size: 22px; }
